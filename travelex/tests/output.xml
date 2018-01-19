@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180119 16:27:13.047" generator="Robot 3.0.2 (Python 2.7.14 on darwin)">
+<suite source="/Users/Obi/Desktop/qa-chall/travelex/tests/basic_functionality.robot" id="s1" name="Basic Functionality">
+<kw type="setup" name="Start webapp and open browser">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${CONFIG.root_url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180119 16:27:13.432" level="INFO">Opening browser 'chrome' to base url 'http://www.travelex.co.uk'.</msg>
+<status status="PASS" endtime="20180119 16:27:20.594" starttime="20180119 16:27:13.431"></status>
+</kw>
+<status status="PASS" endtime="20180119 16:27:20.595" starttime="20180119 16:27:13.430"></status>
+</kw>
+<test id="s1-t1" name="User browses main products on mobile device">
+<status status="FAIL" endtime="20180119 16:27:20.598" critical="yes" starttime="20180119 16:27:20.595">Test case contains no keywords.</status>
+</test>
+<kw type="teardown" name="Stop webapp and close all browsers">
+<kw name="Terminate All Processes" library="Process">
+<doc>Terminates all still running processes started by this library.</doc>
+<status status="PASS" endtime="20180119 16:27:20.602" starttime="20180119 16:27:20.601"></status>
+</kw>
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20180119 16:27:20.762" starttime="20180119 16:27:20.602"></status>
+</kw>
+<status status="PASS" endtime="20180119 16:27:20.762" starttime="20180119 16:27:20.600"></status>
+</kw>
+<status status="FAIL" endtime="20180119 16:27:20.762" starttime="20180119 16:27:13.051"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Basic Functionality" pass="0">Basic Functionality</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
