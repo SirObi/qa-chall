@@ -10,21 +10,21 @@ the 2 websites under test.
 
 # Main design choices
 
-**Python** - Python is a mature, stable language, with a large community and regularly
-updated software testing libraries. This makes it a good choice in terms of stability
+**Python** - Python is a mature, stable language, with a large community and regularly  
+updated software testing libraries. This makes it a good choice in terms of stability  
 and scalability.
 
-**Selenium WebDriver** - this open-source suit of tools is the usual choice
-for Test Automation teams due to its popularity and compatibility with multiple
+**Selenium WebDriver** - this open-source suit of tools is the usual choice  
+for Test Automation teams due to its popularity and compatibility with multiple  
 languages
 
-**Page Object pattern** - since the challenge concentrates on two Web
-applications,the natural design choice for the framework is to follow the Page
-Object pattern.
-It espouses separation of concerns and code reuse, by keeping the test
-cases separate from the implementation details and HTML page structure.
-The latter two are neatly organized into classes containing page-specific element
-locators and functions. Whenever a test involves a particular page, it simply
+**Page Object pattern** - since the challenge concentrates on two Web  
+applications, the natural design choice for the framework is to follow the Page  
+Object pattern.  
+It espouses separation of concerns and code reuse, by keeping the test  
+cases separate from the implementation details and HTML page structure.  
+The latter two are neatly organized into classes containing page-specific element  
+locators and functions. Whenever a test involves a particular page, it simply  
 has to import the corresponding class.
 
 **Gherkin** - as the first step in attempting this challenge, the author tried
@@ -44,7 +44,7 @@ this manual is forMac-users only.
 
 Your Mac should come with Python pre-installed.
 
-For stability purposes, it's generally a good idea to create a virtual
+For stability purposes, it's generally a good idea to create a virtual  
 environment for a new Python project.
 
 `cd` to the directory you've cloned.
