@@ -4,9 +4,8 @@ This repository contains a solution to a QA challenge.
 
 # What kind of tests does this repo include?
 
-Given the time constraints of the challenge, the repo
-contains only several regression tests for critical functionality of
-the 2 websites under test.
+Given the time constraints of the challenge, the repo contains only several  
+regression tests for critical functionality of the 2 websites under test.
 
 # Main design choices
 
