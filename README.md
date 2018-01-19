@@ -77,7 +77,8 @@ close and relaunch the Terminal.
 launch python in the Terminal:
 `python`  
 
-Type:
+Type:  
+
 `from selenium import webdriver`  
 
 `browser = webdriver.Chrome()`
