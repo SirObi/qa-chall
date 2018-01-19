@@ -27,14 +27,14 @@ The latter two are neatly organized into classes containing page-specific elemen
 locators and functions. Whenever a test involves a particular page, it simply  
 has to import the corresponding class.
 
-**Gherkin** - as the first step in attempting this challenge, the author tried
-to understand the business purpose behind the required tests and capture it in
-the form of Gherkin specs. This informed the organization of the test framework.
+**Gherkin** - as the first step in attempting this challenge, the author tried  
+to understand the business purpose behind the required tests and capture it in  
+the form of Gherkin specs. This informed the organization of the test framework.  
 
 # How to run it?
 
 Please note: due to the time constraints of the challenge,
-this manual is forMac-users only.
+this manual is for Mac users only.
 
 ## Clone this repository
 
