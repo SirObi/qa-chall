@@ -45,4 +45,10 @@
 | | I see a title
 | | I see a table of contents
 
+| User changes language
+| | The current page should be | ArticlePage
+| | I go to main page
+| | I change the language to  | de
+| | Location should contain   | de.wikipedia.org
+
 | | Stop webapp and close all browsers
