@@ -10,22 +10,22 @@ the 2 websites under test.
 
 # Main design choices
 
-Python - Python is a mature, stable language, with a large community and regularly
+**Python** - Python is a mature, stable language, with a large community and regularly
 updated software testing libraries. This makes it a good choice in terms of stability
 and scalability.
 
-Selenium WebDriver - this open-source suit of tools is the usual choice
+**Selenium WebDriver** - this open-source suit of tools is the usual choice
 for Test Automation teams due to its popularity and compatibility with multiple
 languages
 
-Page Object pattern - since the challenge concentrates on two Web applications,
+**Page Object pattern** - since the challenge concentrates on two Web applications,
 the natural design choice for the framework is to follow the Page Object pattern.
 It espouses separation of concerns and code reuse, by keeping the test cases separate
 from the implementation details and HTML page structure. The latter two are neatly
 organized into classes containing page-specific element locators and functions.
 Whenever a test involves a particular page, it simply has to import the corresponding class.
 
-Gherkin - as the first step in attempting this challenge, the author tried to understand
+**Gherkin** - as the first step in attempting this challenge, the author tried to understand
 the business purpose behind the required tests and capture it in the form of Gherkin specs.
 This informed the organization of the test framework.
 
@@ -53,14 +53,14 @@ Install virtualenv:
 
 Create and launch a new virtual environment:
 
-`virtualenv env`
+`virtualenv env`  
 `source env/bin/activate`
 
 ## Install selenium in the virtual environment
 
 `pip install selenium`
 
-## Download chromedriver and add its location to path
+## Download chromedriver and add its location to PATH
 This project uses Chrome for presentation purposes.
 
 Get the latest version of chromedriver from:  
