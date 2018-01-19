@@ -25,3 +25,6 @@
 *** Test Cases ***
 | User browses main products on mobile device
 | | [Setup] | Go to page | HomePage
+| | I am using a device of size | 550 | 550 |
+| | I swipe through main products section
+| | I see the appropriate product
