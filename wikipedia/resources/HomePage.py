@@ -1,6 +1,5 @@
 from PageObjectLibrary import PageObject
 from robot.libraries.BuiltIn import BuiltIn
-import time
 
 class HomePage(PageObject):
     """Keywords for Wikipedia Home Page"""
@@ -20,4 +19,3 @@ class HomePage(PageObject):
            article titles'''
         self.se2lib.input_text(self.locator.search_el, phrase)
         self.se2lib.submit_form()
-        time.sleep(5)

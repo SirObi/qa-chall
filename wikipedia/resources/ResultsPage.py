@@ -1,6 +1,5 @@
 from PageObjectLibrary import PageObject
 from robot.libraries.BuiltIn import BuiltIn
-import time
 
 class ResultsPage(PageObject):
     """Keywords for Wikipedia Results Page"""
@@ -31,4 +30,3 @@ class ResultsPage(PageObject):
 
     def i_click_on_the_first_result(self):
         self.se2lib.click_element(self.locator.search_results)
-        time.sleep(3)
