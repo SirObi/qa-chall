@@ -34,7 +34,10 @@ the form of Gherkin specs. This informed the organization of the test framework.
 automated testing with Gherkin specs. As such Robot makes it possible to  
 translate specs written by the business side straight into automated test   
 cases. This further reduces the translation cost between the business side  
-and the dev team.
+and the dev team.  
+
+Additionally, Robot Framework comes with a test runner, which allows the  
+tester to fully concentrate on the task, rather than setting up the project.
 
 # How to run it?
 
