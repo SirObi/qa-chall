@@ -94,6 +94,12 @@ Type:
 
 `browser = webdriver.Chrome()`
 
+## Install Robot Framework  
+`pip install robotframework`  
+
+## Install Robot Framework Page Object library
+`pip install --upgrade robotframework-pageobjectlibrary`
+
 ## Run the regression suite for given app
 The two applications under test are Wikipedia and Travelex.
 
