@@ -30,6 +30,12 @@ has to import the corresponding class.
 to understand the business purpose behind the required tests and capture it in  
 the form of Gherkin specs. This informed the organization of the test framework.  
 
+**Robot Framework** - Robot Framework is a tool which combines Python's   
+automated testing with Gherkin specs. As such Robot makes it possible to  
+translate specs written by the business side straight into automated test   
+cases. This further reduces the translation cost between the business side  
+and the dev team.
+
 # How to run it?
 
 Please note: due to the time constraints of the challenge,
@@ -37,7 +43,7 @@ this manual is for Mac users only.
 
 ## Clone this repository
 
-`git clone obioiboibobiboibobiboib`
+`git clone https://github.com/SirObi/qa-chall.git`
 
 ## Install Python and virtualenv
 
@@ -92,7 +98,13 @@ Type:
 The two applications under test are Wikipedia and Travelex.
 
 You can launch the test suite for Wikipedia like so:
-`sdsd`  
+`robot wikipedia/tests/basic_functionality.robot `  
 
-And the test suit for Travelex like so:
-`djsdskj`
+And the test suite for Travelex like so:
+`robot travelex/tests/basic_functionality.robot `  
+
+# Acknowledgements
+This setup uses B. Oakley's implementation of the Page Object pattern
+in Python.
+The library is available here:  
+https://github.com/boakley/robotframework-pageobjectlibrary
