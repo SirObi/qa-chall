@@ -1,6 +1,4 @@
 from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 import time
 
 DEVICE_SIZE = (550, 550)
@@ -13,6 +11,7 @@ def swipe(locator, direction):
     element = browser.find_element_by_css_selector(locator)
     el_width = element.size['width']
 
+    # Make swipe size depend on element width
     if direction == 'right':
         offset_x = el_width/2
     elif direction == 'left':

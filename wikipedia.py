@@ -22,7 +22,10 @@ def user_follows_search_suggestion():
     suggestion_el.click()
     results = browser.find_elements_by_css_selector('.mw-search-results .mw-search-result-heading > a')
     assert len(results) == 20
-    assert not suggestion_el
+    try:
+        assert not suggestion_el.is_displayed()
+    except:
+        pass
 
 def user_opens_article_from_results_list():
     '''Opens article from results list and checks basic article structure'''

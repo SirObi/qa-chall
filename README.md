@@ -43,6 +43,10 @@ this manual is for Mac users only.
 
 Your Mac should come with Python pre-installed.
 
+However, you'll need the Python package manager, called `pip`
+
+`sudo easy_install pip`
+
 For stability purposes, it's generally a good idea to create a virtual  
 environment for a new Python project.
 
@@ -50,7 +54,7 @@ environment for a new Python project.
 
 Install virtualenv:
 
-`pip install virtualenv`
+`sudo pip install virtualenv`
 
 Create and launch a new virtual environment:
 
@@ -64,15 +68,15 @@ Create and launch a new virtual environment:
 ## Download chromedriver and add its location to PATH
 This project uses Chrome for presentation purposes.
 
-Get the latest version of chromedriver from:  
+In order to drive Chrome, you need the latest version of `chromedriver`
+on your PATH.
 
-Make sure to add the directory containing chromedriver on your local
-machine to the PATH:
+The most stable way to install chromedriver is via Homebrew:
 
-`export PATH=$PATH:/path/to/chromedriver/directory`
+`brew install chromedriver`  
 
-If you're not sure which is your shell configuration file,
-close and relaunch the Terminal.
+If you do not have Homebrew installed, first run:  
+`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
 ## Make sure chromedriver can be found by Python:
 Launch Python in the Terminal:
