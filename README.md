@@ -37,7 +37,7 @@ cases. This further reduces the translation cost between the business side
 and the dev team.  
 
 Additionally, Robot Framework comes with a test runner, which allows the  
-tester to fully concentrate on the task, rather than setting up the project.
+tester to fully concentrate on the task, rather than on setting up the project.
 
 # How to run it?
 
