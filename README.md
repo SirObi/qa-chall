@@ -78,13 +78,15 @@ launch python in the Terminal:
 `python`  
 
 Type:
-`from selenium import webdriver`
+`from selenium import webdriver`  
+
 `browser = webdriver.Chrome()`
 
 ## Run the regression suite for given app
 The two applications under test are Wikipedia and Travelex.
 
 You can launch the test suite for Wikipedia like so:
-`sdsd`
+`sdsd`  
+
 And the test suit for Travelex like so:
 `djsdskj`
