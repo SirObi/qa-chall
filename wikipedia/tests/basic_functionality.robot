@@ -27,7 +27,6 @@
 | | [Setup] | Go to page | HomePage
 | | I search for the phrase | furry rabbits
 | | The current page should be | ResultsPage
-| | Wait for condition  | return document.title == "furry rabbits - Search results - Wikipedia"
 | | I see a list of results
 | | I see a search suggestion
 
@@ -41,7 +40,6 @@
 | | I see a list of results
 | | I click on the first result
 | | The current page should be | ArticlePage
-| | Wait for condition  | return document.title == "Rabbit Bandini Productions - Wikipedia"
 | | I see a title
 | | I see a table of contents
 
