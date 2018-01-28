@@ -4,7 +4,7 @@ from robot.libraries.BuiltIn import BuiltIn
 class ResultsPage(PageObject):
     """Keywords for Wikipedia Results Page"""
 
-    PAGE_TITLE = "furry rabbits - Search results - Wikipedia"
+    PAGE_TITLE = "Search results - Wikipedia"
     PAGE_URL = ""
 
     # these are accessible via dot notaton with self.locator

@@ -15,7 +15,7 @@ class PageObject(six.with_metaclass(ABCMeta, object)):
     Classes that inherit from this class need to define the
     following class variables:
 
-    PAGE_TITLE   the title of the page; used by the default 
+    PAGE_TITLE   the title of the page; used by the default
                  implementation of _is_current_page
     PAGE_URL     this should be the URL of the page, minus
                  the hostname and port (eg: /loginpage.html)
@@ -25,18 +25,18 @@ class PageObject(six.with_metaclass(ABCMeta, object)):
     provided by this class. It compares the current page title to the
     class variable PAGE_TITLE. A class can override this method if the
     page title is not unique or is indeterminate.
-    
+
     Classes that inherit from this class have access to the
     following properties:
 
     * se2lib    a reference to an instance of Selenium2Library
     * browser   a reference to the current webdriver instance
     * logger    a reference to robot.api.logger
-    * locator   a wrapper around the page object's ``_locators`` dictionary 
+    * locator   a wrapper around the page object's ``_locators`` dictionary
 
     This class implements the following context managers:
 
-    * _wait_for_page_refresh  
+    * _wait_for_page_refresh
 
     This context manager is designed to be used in page objects when a
     keyword should wait to return until the html element has been
@@ -103,11 +103,10 @@ class PageObject(six.with_metaclass(ABCMeta, object)):
         actual_title = self.se2lib.get_title()
         expected_title = self.PAGE_TITLE
 
-        if actual_title.lower() == expected_title.lower():
+        if expected_title.lower() in actual_title.lower():
             return True
 
         self.logger.info("expected title: '%s'" % expected_title)
         self.logger.info("  actual title: '%s'" % actual_title)
         raise Exception("expected title to be '%s' but it was '%s'" % (expected_title, actual_title))
         return False
-
