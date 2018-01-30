@@ -110,7 +110,18 @@ You can launch the test suite for Wikipedia like so:
 `robot wikipedia/tests/basic_functionality.robot `  
 
 And the test suite for Travelex like so:
-`robot travelex/tests/basic_functionality.robot `  
+`robot travelex/tests/basic_functionality.robot `   
+
+## Notes  
+If you get an error using the `robot` command, this is  
+due to the version of Python that comes pre-installed with  
+your Mac - this Python can get "messed up" sometimes.  
+
+A quick workaround is to use the following command (instead of `robot`):  
+`python -m robot path/to file/`  
+
+Example:  
+`python -m robot wikipedia/tests/basic_functionality.robot`
 
 # Acknowledgements
 This setup uses B. Oakley's implementation of the Page Object pattern
